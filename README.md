@@ -1,0 +1,4 @@
+Templates
+=========
+
+Repository for templates.
