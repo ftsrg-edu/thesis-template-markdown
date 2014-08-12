@@ -73,15 +73,15 @@ html: compile-guideline-html compile-appendix-html
 		--output=$(FILENAME).html \
 		--css=buttondown.css \
 
-mobi: compile-guideline-mobi compile-appendix-mobi
+epub: compile-guideline-html compile-appendix-html
 	pandoc \
 		$(FILES) \
 		$(ARGS) \
-		--include-before-body=$(BEFORE_FILE).mobi \
-		--include-after-body=$(APPENDIX_FILE).mobi \
-		--output=$(FILENAME).mobi \
+		--include-before-body=$(BEFORE_FILE).html \
+		--include-after-body=$(APPENDIX_FILE).html \
+		--output=$(FILENAME).epub \
 		--css=buttondown.css \
-		--mimetex \
+		--epub-metadata=metadata.xml
 
 build-latex:
 	pdflatex $(FILENAME).tex
@@ -106,13 +106,6 @@ compile-guideline-html:
 		--to=html \
 		--output=$(BEFORE_FILE).html \
 
-compile-guideline-mobi:
-	pandoc \
-		$(BEFORE_FILE) \
-		--from=markdown \
-		--output=$(BEFORE_FILE).mobi \
-
-
 ## rules for compiling the appendix
 
 compile-appendix-tex:
@@ -131,13 +124,6 @@ compile-appendix-html:
 		--to=html \
 		--output=$(APPENDIX_FILE).html \
 
-compile-appendix-mobi:
-	pandoc \
-		$(APPENDIX_FILE) \
-		$(HTML_ARGS) \
-		--from=markdown \
-		--output=$(APPENDIX_FILE).mobi \
-
 ## misc rules
 
 open:
@@ -145,4 +131,4 @@ open:
 		$(FILENAME).pdf \
 
 clean:
-	rm -f *.tex *.aux *.dvi *.log *.pdf *.html *.mobi *.out
+	rm -f *.tex *.aux *.dvi *.log *.pdf *.html *.mobi *.out *.epub
