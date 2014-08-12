@@ -77,6 +77,8 @@ mobi: compile-guideline-mobi compile-appendix-mobi
 	pandoc \
 		$(FILES) \
 		$(ARGS) \
+		--include-before-body=$(BEFORE_FILE).mobi \
+		--include-after-body=$(APPENDIX_FILE).mobi \
 		--output=$(FILENAME).mobi \
 		--css=buttondown.css \
 		--mimetex \
