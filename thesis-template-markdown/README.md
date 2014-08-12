@@ -1,4 +1,4 @@
-Template for thesis works in the Budapest University of Technology and Economics.
+Markdown template for thesis works in the Budapest University of Technology and Economics.
 
 Tested on Linux Mint 17.
 
