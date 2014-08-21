@@ -1,4 +1,4 @@
-Templates
-=========
+thesis-template-markdown
+========================
 
-Repository for templates.
+Thesis template in Markdown.
