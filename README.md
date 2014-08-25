@@ -1,3 +1,6 @@
+thesis-template-markdown
+========================
+
 Markdown template for thesis works in the Budapest University of Technology and Economics.
 
 Tested on Linux Mint 17.
@@ -9,10 +12,9 @@ Tested on Linux Mint 17.
 
 ### Usage
 
-* Clone this repository and navigate to the `thesis-template-markdown` directory:
+* Clone this repository:
   ```bash
-  git clone git@github.com:FTSRG/Templates.git
-  cd Templates/thesis-template-markdown/
+  git clone git@github.com:FTSRG/thesis-template-markdown.git
   ```
   
-* Use `make pdf`, `make html`, `make mobi` to generate the thesis in your desired output format.
+* Use `make pdf`, `make html`, `make epub` to generate the thesis in your desired output format.
