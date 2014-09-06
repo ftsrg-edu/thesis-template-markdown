@@ -1,0 +1,7 @@
+before_script:
+  - sudo apt-get install -y texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended texlive-lang-hungarian
+
+script:
+  - make html
+  - make epub
+  - make pdf
