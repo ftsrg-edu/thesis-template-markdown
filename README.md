@@ -1,6 +1,8 @@
 thesis-template-markdown
 ========================
 
+[![Build status](https://travis-ci.org/FTSRG/thesis-template-markdown.svg?branch=master)](https://travis-ci.org/FTSRG/thesis-template-markdown)
+
 Markdown template for thesis works in the Budapest University of Technology and Economics.
 
 Tested on Linux Mint 17.
