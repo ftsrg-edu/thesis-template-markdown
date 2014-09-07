@@ -1,8 +1,8 @@
 before_script:
-  - sudo apt-get install -y texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended texlive-lang-hungarian
   - sudo sed -i "s/precise/utopic/" /etc/apt/sources.list
   - sudo apt-get update
   - sudo apt-get install -y pandoc pandoc-citeproc
+  - sudo apt-get install -y texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended texlive-lang-hungarian
 
 script:
   - make html
