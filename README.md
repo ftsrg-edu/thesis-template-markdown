@@ -3,7 +3,7 @@ thesis-template-markdown
 
 [![Build status](https://travis-ci.org/FTSRG/thesis-template-markdown.svg?branch=master)](https://travis-ci.org/FTSRG/thesis-template-markdown)
 
-Markdown template for thesis works in the Budapest University of Technology and Economics.
+Markdown template for thesis works in the Budapest University of Technology and Economics. **This is an experimental work** and is only recommended for users experienced with _both Markdown and LaTeX_.
 
 Tested on Linux Mint 17.
 
