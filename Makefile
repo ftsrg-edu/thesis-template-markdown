@@ -81,7 +81,7 @@ epub: compile-guideline-html compile-appendix-html
 		--include-after-body=$(APPENDIX_FILE).html \
 		--output=$(FILENAME).epub \
 		--css=buttondown.css \
-		--epub-metadata=metadata.xml
+		--epub-metadata=metadata.xml \
 
 build-latex:
 	pdflatex $(FILENAME).tex
