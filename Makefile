@@ -72,7 +72,7 @@ html: compile-guideline-html compile-appendix-html
 		--output=$(FILENAME).html \
 		--css=buttondown.css \
 
-epub: compile-guideline-html compile-appendix-d
+epub: compile-guideline-html compile-appendix-html
 	pandoc \
 		$(FILES) \
 		$(ARGS) \
