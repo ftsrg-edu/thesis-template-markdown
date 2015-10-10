@@ -1,4 +1,5 @@
 before_script:
+  - sudo sed -i "s/precise/vivid/" /etc/apt/sources.list
   - sudo apt-get update
   - sudo apt-get install -y pandoc pandoc-citeproc
   - sudo apt-get install -y texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended texlive-lang-hungarian
