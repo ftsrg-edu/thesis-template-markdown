@@ -47,7 +47,6 @@ LATEX_ARGS = \
 HTML_ARGS = \
 	--mathjax \
 	--filter pandoc-citeproc \
-	--csl=ieee.csl \
 
 # rules
 
@@ -73,7 +72,7 @@ html: compile-guideline-html compile-appendix-html
 		--output=$(FILENAME).html \
 		--css=buttondown.css \
 
-epub: compile-guideline-html compile-appendix-html
+epub: compile-guideline-html compile-appendix-d
 	pandoc \
 		$(FILES) \
 		$(ARGS) \
