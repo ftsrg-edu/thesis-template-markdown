@@ -173,7 +173,7 @@ $endif$
 \marginsize{35mm}{25mm}{15mm}{15mm} % anysize package
 \setcounter{secnumdepth}{0}
 \sectionfont{\large\upshape\bfseries}
-\setcounter{secnumdepth}{2}
+\setcounter{secnumdepth}{3}
 \singlespacing
 \frenchspacing
 
